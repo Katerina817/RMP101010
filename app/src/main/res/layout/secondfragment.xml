@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green">
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:hint="Введите имя кролика"
+        android:textColor="@color/dark_green"
+        android:textSize="30dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="50dp"
+        />
+
+    <EditText
+        android:id="@+id/editcolor"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите цвет шерсти"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30dp"
+        android:background="@color/light_green"
+        android:textColor="@color/dark_green"
+        app:layout_constraintTop_toBottomOf="@id/editname"
+        android:layout_marginTop="75dp"
+        />
+    <EditText
+        android:id="@+id/editlength"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите длину ушей"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30dp"
+        android:background="@color/light_green"
+        android:textColor="@color/dark_green"
+        app:layout_constraintTop_toBottomOf="@id/editcolor"
+        android:layout_marginTop="75dp"
+        />
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите возраст кролика"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30dp"
+        android:background="@color/light_green"
+        android:textColor="@color/dark_green"
+        app:layout_constraintTop_toBottomOf="@id/editlength"
+        android:layout_marginTop="75dp"
+        />
+    <Button
+        android:id="@+id/createbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="СОЗДАТЬ"
+        android:textSize="55dp"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="@color/dark_green"
+        android:textColor="@color/light_green"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

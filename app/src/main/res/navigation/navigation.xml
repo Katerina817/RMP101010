@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.rmp101010.UI.Layer.view.FirstFragment"
+        android:label="FirstFragment"
+        tools:layout="@layout/firstfragment">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.rmp101010.UI.Layer.view.SecondFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/secondfragment">
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.rmp101010.UI.Layer.view.ThirdFragment"
+        android:label="ThirdFragment"
+        tools:layout="@layout/thirdfragment">
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_trirdThirdFragment2"
+            app:destination="@id/trirdThirdFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.rmp101010.UI.Layer.view.FourthFragment"
+        android:label="FourthFragment"
+        tools:layout="@layout/fourthfragment">
+        <action
+            android:id="@+id/action_fourthFragment_to_fifthFragment"
+            app:destination="@id/fifthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.example.rmp101010.UI.Layer.view.FifthFragment"
+        android:label="FifthFragment"
+        tools:layout="@layout/fifthfragment"/>
+    <fragment
+        android:id="@+id/trirdThirdFragment2"
+        android:name="com.example.rmp101010.UI.Layer.view.TrirdThirdFragment"
+        android:label="TrirdThirdFragment"
+        tools:layout="@layout/thirdthirdfragment">
+        <action
+            android:id="@+id/action_trirdThirdFragment2_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+
+</navigation>
